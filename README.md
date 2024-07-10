@@ -53,15 +53,15 @@ sequenceDiagram
 4. Process Payment:
 
 - The order processing system communicates with the third-party payment gateway to process the payment securely.
-- Secure channels and authentication mechanisms are used to ensure data integrity and confidentiality. (SSL, TLS over REST most likely to external gateway)
+- Encryption and authentication mechanisms are used to ensure data integrity and confidentiality (SSL, TLS over REST API most likely to external gateway).
 
-5. Payment Authorization:
+5. Payment Authorisation:
 
-- The payment gateway processes the payment and sends an authorization response back to the order processing system.
+- The payment gateway processes the payment and sends an authorisation response back to the order processing system.
 
 6. Inventory Available/Update:
 
-- Inventory management system updates inventory, reducing levels by quantity in order. This is performed after payment confirmation to avoid reducing inventory for unsuccessful orders.
+- Inventory management system updates inventory, reducing levels by quantity in customer order. This is performed after payment confirmation to avoid incorrectly reducing inventory for unsuccessful orders.
 
 7. Order Confirmation:
 
