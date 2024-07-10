@@ -13,7 +13,7 @@ sequenceDiagram
     participant PG as Payment Gateway
     end
     participant LOG as Logging Server
-    Note right of PG: Communication to external payment<br/> gateway secured via <br/>TLS (SSL) Handshake.
+    Note over PG: Communication to external payment<br/> gateway secured via <br/>TLS (SSL) Handshake.
     USER->>+ECP: Place Order
     ECP->>+OPS: Send Order for Processing
     OPS->>+IMS: Check Inventory
